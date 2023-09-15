@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="validadacao.js"></script>
+</head>
+
+<body>
+
+    <form id="formulario">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+                <nav id="error_nome" style="display: none;">O nome deve conter pelo menos 3 caracteres</nav>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Idade</label>
+                <input type="number" class="form-control" id="idade" placeholder="Insira a sua idade">
+                <nav id="error_idade" style="display: none;">A idade deve ser maior que 17 e menor que 35</nav>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Insira o seu email">
+                <nav id="error_email" style="display: none;">O email não é válido</nav>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Senha</label>
+                <input onkeyup="validarSenha()" id="password" class="form-control" placeholder="Senha">
+                <nav id="error_password" style="display: none;">A senha deve conter maiúsculas e minúsculas e ter pelo menos 8 caracteres</nav>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Numero de Celular</label>
+                <input type="tel" class="form-control" id="inputCity" placeholder="Informe seu numero de celular">
+                <nav id="error_celular" style="display: none;">O número de celular não é válido</nav>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputEstado">Selecione a sua provincia</label>
+                <select id="inputEstado" class="form-control">
+              <option selected>Maputo</option>
+              <option>Nampula</option>
+            </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="terms">Aceitar Termos e Condições </label>
+                <input type="checkbox" class="red-text" id="terms">
+                <nav id="error_terms" class="red-text" style="display: none;">Você deve aceitar os termos e condições</nav>
+            </div>
+        </div class="form-group col-md-4">
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+    </form>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+/* Estilo para as mensagens de erro */
+
+nav {
+    color: red;
+    display: none;
+}
+
+
+/* Estilo para o texto verde dos termos e condições aceitos */
+
+.green-text {
+    color: green;
+}
+
+
+/* Estilo para o texto vermelho dos termos e condições não aceitos */
+
+.red-text {
+    color: red;
+}
